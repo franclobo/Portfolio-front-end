@@ -1,4 +1,7 @@
+import { useState } from 'react';
 import PropTypes from 'prop-types';
+import Modal from './Modal';
+import './home.scss';
 
 function Cards(props) {
   const {
@@ -7,26 +10,29 @@ function Cards(props) {
 
   const generateKey = (pre) => `${pre}${new Date().getTime()}`;
 
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="Cards" id={id}>
-      <div className="Card-Title">
-        <h2>{name}</h2>
-      </div>
       <div className="Card-Image">
         <img src={image[0]} alt={name} />
       </div>
-      <div className="Card-Skills">
-        {skills.map((skill) => (
-          <p key={generateKey(skill)} className="skill">{skill}</p>
-        ))}
+      <div className="Card-Background">
+        <div className="Card-Title">
+          <p>{name}</p>
+        </div>
+        <div className="Card-Skills">
+          {skills.map((skill) => (
+            <p key={generateKey(skill)} className="skill">{skill}</p>
+          ))}
+        </div>
+        <div className="Card-Buttons">
+          <button id={id} type="button" className="card button" onClick={() => { setOpen(true); }}>
+            See this project
+          </button>
+        </div>
       </div>
-      <div className="Card-Buttons">
-        <button type="button" className="card button">
-          <a href="#project" target="_blank" rel="noreferrer">
-            See project
-          </a>
-        </button>
-      </div>
+      { open && <Modal onClose={setOpen} idn={id} /> }
     </div>
   );
 }
