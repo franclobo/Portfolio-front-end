@@ -46,9 +46,13 @@ export default function Home() {
 
     emailjs.sendForm('service_sir2z7j', 'template_ssw8wxj', form.current, '5xAo0GJGmMeTfUPd1')
       .then((result) => {
+        // eslint-disable-next-line
+        console.log(result.text);
         e.target.reset();
         setStatus('Message sent successfully');
       }, (error) => {
+        // eslint-disable-next-line
+        console.log(error.text);
         setStatus('Message failed to send');
       });
   };
