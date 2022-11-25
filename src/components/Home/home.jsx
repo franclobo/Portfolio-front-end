@@ -14,6 +14,14 @@ import linkedin from './Images/ic_linkedin.svg';
 import twitter from './Images/ic_twitter.svg';
 import medium from './Images/ic_medium.svg';
 import angellist from './Images/ic_angellist.svg';
+import dots from './Images/image_dots.svg';
+import ImageGeometry3 from './Images/image-geometry_2.svg';
+import ImageGeometry4 from './Images/image-geometry_3.svg';
+import ImageGeometry5 from './Images/image-geometry_4.svg';
+import ImageGeometry6 from './Images/image-geometry_5.svg';
+import ImageGeometry7 from './Images/image_dots_with_teal.svg';
+import ImageGeometry8 from './Images/image-geometry_6.svg';
+import ImageGeometry9 from './Images/image-geometry_7.svg';
 import Menu from './Menu';
 import Navbar from './Navbar';
 import './home.scss';
@@ -90,9 +98,14 @@ export default function Home() {
         </div>
         <img src={ImageGeometry2} className="geometry" alt="geometry" />
       </div>
-      <div className="Projects">
-        <h1 className="title" id="Portfolio">Projects</h1>
-        <div className="Cards">
+      <div className="Projects" id="Portfolio">
+        <h1 className="title">Projects</h1>
+        <img src={dots} className="dots" alt="dots" />
+        <img src={ImageGeometry3} className="geometry3" alt="geometry" />
+        <img src={ImageGeometry4} className="geometry4" alt="geometry" />
+        <img src={ImageGeometry5} className="geometry5" alt="geometry" />
+        <img src={ImageGeometry6} className="geometry6" alt="geometry" />
+        <div className="Card">
           {projects.map((card) => (
             <Cards
               key={card.id}
@@ -105,57 +118,57 @@ export default function Home() {
         </div>
       </div>
       <div className="About">
-        <h1 className="title" id="About">About</h1>
-        <div className="About-Container">
-          <div className="About-Paragraph">
-            <p className="presentation">
-              Business Engineer, full-stack developer.
-              Interested in Web development and data science.
-              Programming with React&Readux and Ruby on Rails.
-              Available for hiring.
-            </p>
-          </div>
+        <div className="About-Paragraph">
+          <h1 className="title" id="About">About</h1>
+          <p className="presentation">
+            Business Engineer, full-stack developer.
+            Interested in Web development and data science.
+            Programming with React&Readux and Ruby on Rails.
+            Available for hiring.
+          </p>
           <div className="About-Button">
             <button type="button" className="button">
               <a href="./Images/Fran_Borja_CV.pdf" download="Fran_Borja_CV.pdf">Get my CV</a>
             </button>
           </div>
-          <div className="About-Skills">
-            <div className="Languages">
-              <h2 className="subtitle">Languages</h2>
-              <ul className="list">
-                <li className="item">Javascript</li>
-                <li className="item">Ruby</li>
-                <li className="item">HTML</li>
-                <li className="item">CSS</li>
-                <li className="item">SQL</li>
-              </ul>
-            </div>
-            <div className="Frameworks">
-              <h2 className="subtitle">Frameworks</h2>
-              <ul className="list">
-                <li className="item">React</li>
-                <li className="item">Bootstrap</li>
-                <li className="item">PostgreSQL</li>
-                <li className="item">Ruby on Rails</li>
-                <li className="item">RSpec</li>
-                <li className="item">Capibara</li>
-              </ul>
-            </div>
-            <div className="Skills">
-              <h2 className="subtitle">Skills</h2>
-              <ul className="list">
-                <li className="item">Codekit</li>
-                <li className="item">Github</li>
-                <li className="item">GitLab</li>
-                <li className="item">Terminal</li>
-              </ul>
-            </div>
+        </div>
+        <div className="About-Skills">
+          <div className="Languages">
+            <h2 className="subtitle">Languages</h2>
+            <ul className="list">
+              <li className="item">Javascript</li>
+              <li className="item">Ruby</li>
+              <li className="item">HTML</li>
+              <li className="item">CSS</li>
+              <li className="item">SQL</li>
+            </ul>
           </div>
+          <div className="Frameworks">
+            <h2 className="subtitle">Frameworks</h2>
+            <ul className="list">
+              <li className="item">React</li>
+              <li className="item">Bootstrap</li>
+              <li className="item">PostgreSQL</li>
+              <li className="item">Ruby on Rails</li>
+              <li className="item">RSpec</li>
+              <li className="item">Capibara</li>
+            </ul>
+          </div>
+          <div className="Skills">
+            <h2 className="subtitle">Skills</h2>
+            <ul className="list">
+              <li className="item">Codekit</li>
+              <li className="item">Github</li>
+              <li className="item">GitLab</li>
+              <li className="item">Terminal</li>
+            </ul>
+          </div>
+          <img src={ImageGeometry7} className="geometry7" alt="geometry" />
         </div>
       </div>
       <div className="Contact">
         <img src={ImageGeometry1} className="App-logo" alt="logo" />
+        <img src={ImageGeometry8} className="geometry8" alt="geometry" />
         <h1 className="title" id="Contact">Get Started</h1>
         <div className="Contact-Container">
           <div className="Contact-Paragraph">
@@ -202,45 +215,50 @@ export default function Home() {
             {status && renderAlert()}
             <button type="submit" className="button">Get in touch</button>
           </form>
+          <img src={ImageGeometry9} className="geometry9" alt="geometry" />
         </div>
       </div>
       <div className="Footer">
         <div className="Footer-Container">
-          <button type="button" className="button">
-            <a href="./Images/Fran_Borja_CV.pdf" download="Fran_Borja_CV.pdf">Get my Resume</a>
-          </button>
-          <ul className="social-icons">
-            <li className="social-icon">
-              <a href="https://stackoverflow.com/users/19740581/francisco-borja" target="_blank" rel="noreferrer">
-                <img className="stackoverflow" src={stackoverflow} alt="stack overflow" />
-              </a>
-            </li>
-            <li className="social-icon">
-              <a href="https://github.com/franclobo" target="_blank" rel="noreferrer">
-                <img className="github" src={github} alt="github" />
-              </a>
-            </li>
-            <li className="social-icon">
-              <a href="https://twitter.com/Pancho2788" target="_blank" rel="noreferrer">
-                <img className="twitter" src={twitter} alt="twitter" />
-              </a>
-            </li>
-            <li className="social-icon">
-              <a href="https://www.linkedin.com/in/francisco-borja-lobato/" target="_blank" rel="noreferrer">
-                <img className="linkedin" src={linkedin} alt="linkedin" />
-              </a>
-            </li>
-            <li className="social-icon">
-              <a href="https://medium.com/@fjbl2788" target="_blank" rel="noreferrer">
-                <img className="medium" src={medium} alt="medium.svg" />
-              </a>
-            </li>
-            <li className="social-icon">
-              <a href="https://angel.co/u/francisco-borja-lobato" target="_blank" rel="noreferrer">
-                <img className="angellist" src={angellist} alt="angellist" />
-              </a>
-            </li>
-          </ul>
+          <div className="get-cv">
+            <button type="button" className="button">
+              <a href="./Images/Fran_Borja_CV.pdf" download="Fran_Borja_CV.pdf">Get my Resume</a>
+            </button>
+          </div>
+          <div className="social-media">
+            <ul className="social-icons">
+              <li className="social-icon">
+                <a href="https://stackoverflow.com/users/19740581/francisco-borja" target="_blank" rel="noreferrer">
+                  <img className="stackoverflow" src={stackoverflow} alt="stack overflow" />
+                </a>
+              </li>
+              <li className="social-icon">
+                <a href="https://github.com/franclobo" target="_blank" rel="noreferrer">
+                  <img className="github" src={github} alt="github" />
+                </a>
+              </li>
+              <li className="social-icon">
+                <a href="https://twitter.com/Pancho2788" target="_blank" rel="noreferrer">
+                  <img className="twitter" src={twitter} alt="twitter" />
+                </a>
+              </li>
+              <li className="social-icon">
+                <a href="https://www.linkedin.com/in/francisco-borja-lobato/" target="_blank" rel="noreferrer">
+                  <img className="linkedin" src={linkedin} alt="linkedin" />
+                </a>
+              </li>
+              <li className="social-icon">
+                <a href="https://medium.com/@fjbl2788" target="_blank" rel="noreferrer">
+                  <img className="medium" src={medium} alt="medium.svg" />
+                </a>
+              </li>
+              <li className="social-icon">
+                <a href="https://angel.co/u/francisco-borja-lobato" target="_blank" rel="noreferrer">
+                  <img className="angellist" src={angellist} alt="angellist" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

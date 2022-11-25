@@ -19,29 +19,31 @@ function Projects(props) {
           <p key={generateKey(skill)} className="skill">{skill}</p>
         ))}
       </div>
-      <div className="Project-Image">
-        <Carousel>
-          {image.map((img) => (
-            <div key={generateKey(img)}>
-              <img src={img} alt={name} />
-            </div>
-          ))}
-        </Carousel>
-      </div>
-      <div className="Project-Description">
-        <p>{description}</p>
-      </div>
-      <div className="Project-Buttons">
-        <button type="button" className="button demo">
-          <a href={demo || '#'} target="_blank" rel="noreferrer">
-            See live
-          </a>
-        </button>
-        <button type="button" className="button github">
-          <a href={github || '#'} target="_blank" rel="noreferrer">
-            See source
-          </a>
-        </button>
+      <div className="Project-Items">
+        <div className="Project-Image">
+          <Carousel>
+            {image.map((img) => (
+              <div key={generateKey(img)}>
+                <img src={img} alt={name} />
+              </div>
+            ))}
+          </Carousel>
+        </div>
+        <div className="Project-Description">
+          <p>{description}</p>
+        </div>
+        <div className="Project-Buttons">
+          <button type="button" className="button demo">
+            <a href={demo || '#'} target="_blank" rel="noreferrer">
+              See live
+            </a>
+          </button>
+          <button type="button" className="button github">
+            <a href={github || '#'} target="_blank" rel="noreferrer">
+              See source
+            </a>
+          </button>
+        </div>
       </div>
     </div>
   );
