@@ -153,6 +153,13 @@ ul {
   border: 1px solid #1a2236;
 }
 
+.Card-Image {
+  img {
+    width: 100%;
+    height: 186px;
+  }
+}
+
 .carousel-root {
   .slide {
     img {
@@ -197,6 +204,34 @@ ul {
   }
 }
 
+.Footer {
+  background-color: #1a2236;
+
+  .button {
+    background-image: url(./Images/export.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 22px;
+    padding: 0 30px;
+    color: #92dcdc;
+
+    a {
+      color: #92dcdc;
+      text-decoration: none;
+    }
+  }
+
+  .button:hover {
+    background-image: url(./Images/export.svg);
+    background-color: #1a2236;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 22px;
+    padding: 0 30px;
+    color: #92dcdc;
+  }
+}
+
 .Project-Buttons {
   display: flex;
   flex-direction: row;
@@ -229,6 +264,29 @@ ul {
       height: 27px;
       color: #1a2236;
       text-decoration: none;
+    }
+  }
+
+  .menuContainer {
+    position: relative;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 100vh;
+    width: 85vw;
+  
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+  
+      a {
+        text-decoration: none;
+      }
     }
   }
 
@@ -291,29 +349,6 @@ ul {
   background-color: #fff;
 }
 
-.menuContainer {
-  position: relative;
-  left: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #fff;
-  height: 100vh;
-  width: 85vw;
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-
-    a {
-      text-decoration: none;
-    }
-  }
-}
-
 .menu-close {
   border: none;
   background: none;
@@ -324,13 +359,6 @@ ul {
 .close {
   border: none;
   background: none;
-}
-
-.Card-Image {
-  img {
-    width: 100%;
-    height: 186px;
-  }
 }
 
 .Card-Background {
@@ -370,7 +398,6 @@ ul {
     justify-content: flex-start;
     gap: 10px;
     flex-wrap: wrap;
-    margin: 16px 0;
     width: 100%;
     height: 100%;
     margin: 0 0 20px 0;
@@ -506,34 +533,6 @@ ul {
   margin: 0;
 }
 
-.Footer {
-  background-color: #1a2236;
-
-  .button {
-    background-image: url(./Images/export.svg);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 22px;
-    padding: 0 30px;
-    color: #92dcdc;
-
-    a {
-      color: #92dcdc;
-      text-decoration: none;
-    }
-  }
-
-  .button:hover {
-    background-image: url(./Images/export.svg);
-    background-color: #1a2236;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 22px;
-    padding: 0 30px;
-    color: #92dcdc;
-  }
-}
-
 /* desk-version */
 @media (min-width: 800px) {
   .Header,
@@ -581,490 +580,6 @@ ul {
       padding: 0;
       margin: 0;
     }
-  }
-
-  .Card {
-    height: 1300px;
-
-    .Card-Background {
-      transition: all 500ms ease-out;
-      opacity: 0;
-      visibility: visible;
-    }
-
-    .Card-Background:hover {
-      transition: all 500ms ease-out;
-      opacity: 1;
-      visibility: visible;
-    }
-  }
-
-  .card {
-    &__0 {
-      width: 860px;
-      height: 558px;
-      position: relative;
-      left: 550px;
-      bottom: 969px;
-
-      .Card-Image {
-        img {
-          height: 558px;
-        }
-      }
-
-      .Card-Background {
-        position: relative;
-        height: 353px;
-        bottom: 360px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-
-        .Content {
-          position: relative;
-          left: 60px;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: center;
-          gap: 30px;
-        }
-
-        .Card-Title > p {
-          font-family: 'Poppins', sans-serif;
-          font-style: normal;
-          font-weight: 700;
-          font-size: 60px;
-          line-height: 80%;
-        }
-
-        .Card-Skills > .skill {
-          font-family: 'Poppins', sans-serif;
-          font-style: normal;
-          font-weight: 300;
-          font-size: 20px;
-          line-height: 80%;
-          padding: 12px 20px;
-        }
-
-        .Card-Buttons {
-          .button {
-            width: 212px;
-            height: 51px;
-            background-image: url(./Images/UnionBlack.svg);
-            background-repeat: no-repeat;
-            background-size: 20px;
-            background-position-x: 170px;
-            background-color: #fff;
-            color: #1a2236;
-            font-family: 'Poppins', sans-serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 27px;
-            cursor: pointer;
-          }
-        }
-      }
-    }
-  }
-
-  .card {
-    &__1 {
-      width: 433px;
-      height: 270px;
-      position: relative;
-      left: 0;
-      bottom: 872px;
-
-      .Card-Image {
-        img {
-          height: 270px;
-        }
-      }
-
-      .Card-Background {
-        position: relative;
-        height: 238px;
-        bottom: 252px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 0 0 0 54px;
-
-        .Content {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: center;
-        }
-
-        .Card-Title > p {
-          font-family: 'Poppins', sans-serif;
-          font-style: normal;
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 80%;
-        }
-
-        .Card-Skills > .skill {
-          font-family: 'Poppins', sans-serif;
-          font-style: normal;
-          font-weight: 300;
-          font-size: 10px;
-          line-height: 80%;
-          padding: 12px 20px;
-        }
-
-        .Card-Buttons {
-          .button {
-            width: 212px;
-            height: 51px;
-            background-image: url(./Images/UnionBlack.svg);
-            background-repeat: no-repeat;
-            background-size: 20px;
-            background-position-x: 170px;
-            background-color: #fff;
-            color: #1a2236;
-            font-family: 'Poppins', sans-serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 27px;
-            cursor: pointer;
-          }
-        }
-      }
-    }
-  }
-
-  .card {
-    &__2 {
-      width: 697px;
-      height: 425px;
-      position: relative;
-      left: 0;
-      bottom: 881px;
-
-      .Card-Image {
-        img {
-          height: 460px;
-        }
-      }
-
-      .Card-Background {
-        position: relative;
-        height: 246px;
-        bottom: 252px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 0 0 0 54px;
-
-        .Content {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: center;
-        }
-
-        .Card-Title > p {
-          font-family: 'Poppins', sans-serif;
-          font-style: normal;
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 80%;
-        }
-
-        .Card-Skills > .skill {
-          font-family: 'Poppins', sans-serif;
-          font-style: normal;
-          font-weight: 300;
-          font-size: 10px;
-          line-height: 80%;
-          padding: 12px 20px;
-        }
-
-        .Card-Buttons {
-          .button {
-            width: 212px;
-            height: 51px;
-            background-image: url(./Images/UnionBlack.svg);
-            background-repeat: no-repeat;
-            background-size: 20px;
-            background-position-x: 170px;
-            background-color: #fff;
-            color: #1a2236;
-            font-family: 'Poppins', sans-serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 27px;
-            cursor: pointer;
-          }
-        }
-      }
-    }
-  }
-
-  .card {
-    &__3 {
-      width: 382px;
-      height: 270px;
-      position: relative;
-      left: 1024px;
-      bottom: 1665px;
-
-      .Card-Image {
-        img {
-          height: 270px;
-        }
-      }
-
-      .Card-Background {
-        position: relative;
-        height: 238px;
-        bottom: 252px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-
-        .Content {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: center;
-        }
-
-        .Card-Title > p {
-          font-family: 'Poppins', sans-serif;
-          font-style: normal;
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 80%;
-        }
-
-        .Card-Skills > .skill {
-          font-family: 'Poppins', sans-serif;
-          font-style: normal;
-          font-weight: 300;
-          font-size: 10px;
-          line-height: 80%;
-          padding: 12px 20px;
-        }
-
-        .Card-Buttons {
-          .button {
-            width: 212px;
-            height: 51px;
-            background-image: url(./Images/UnionBlack.svg);
-            background-repeat: no-repeat;
-            background-size: 20px;
-            background-position-x: 170px;
-            background-color: #fff;
-            color: #1a2236;
-            font-family: 'Poppins', sans-serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 27px;
-            cursor: pointer;
-          }
-        }
-      }
-    }
-  }
-
-  .card {
-    &__4 {
-      width: 382px;
-      height: 270px;
-      position: relative;
-      left: 1024px;
-      bottom: 1673px;
-
-      .Card-Image {
-        img {
-          height: 270px;
-        }
-      }
-
-      .Card-Background {
-        position: relative;
-        height: 238px;
-        bottom: 252px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-
-        .Content {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: center;
-        }
-
-        .Card-Title > p {
-          font-family: 'Poppins', sans-serif;
-          font-style: normal;
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 80%;
-        }
-
-        .Card-Skills > .skill {
-          font-family: 'Poppins', sans-serif;
-          font-style: normal;
-          font-weight: 300;
-          font-size: 10px;
-          line-height: 80%;
-          padding: 12px 20px;
-        }
-
-        .Card-Buttons {
-          .button {
-            width: 212px;
-            height: 51px;
-            background-image: url(./Images/UnionBlack.svg);
-            background-repeat: no-repeat;
-            background-size: 20px;
-            background-position-x: 170px;
-            background-color: #fff;
-            color: #1a2236;
-            font-family: 'Poppins', sans-serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 27px;
-            cursor: pointer;
-          }
-        }
-      }
-    }
-  }
-
-  .card {
-    &__5 {
-      width: 382px;
-      height: 270px;
-      position: relative;
-      left: 697px;
-      bottom: 1386px;
-
-      .Card-Image {
-        img {
-          height: 270px;
-        }
-      }
-
-      .Card-Background {
-        position: relative;
-        height: 238px;
-        bottom: 252px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-
-        .Content {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: center;
-        }
-
-        .Card-Title > p {
-          font-family: 'Poppins', sans-serif;
-          font-style: normal;
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 80%;
-        }
-
-        .Card-Skills > .skill {
-          font-family: 'Poppins', sans-serif;
-          font-style: normal;
-          font-weight: 300;
-          font-size: 10px;
-          line-height: 80%;
-          padding: 12px 20px;
-        }
-
-        .Card-Buttons {
-          .button {
-            width: 212px;
-            height: 51px;
-            background-image: url(./Images/UnionBlack.svg);
-            background-repeat: no-repeat;
-            background-size: 20px;
-            background-position-x: 170px;
-            background-color: #fff;
-            color: #1a2236;
-            font-family: 'Poppins', sans-serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 27px;
-            cursor: pointer;
-          }
-        }
-      }
-    }
-  }
-
-  .Projects {
-    .title {
-      position: relative;
-      right: 540px;
-      bottom: 110px;
-      rotate: 270deg;
-      font-family: 'Playfair Display', serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 110px;
-      line-height: 100%;
-    }
-  }
-
-  .dots {
-    display: flex;
-    position: relative;
-    left: 300px;
-    top: 34px;
-  }
-
-  .geometry3 {
-    display: flex;
-    position: relative;
-    left: 511px;
-    top: 427px;
-  }
-
-  .geometry4 {
-    display: flex;
-    position: relative;
-    left: 767px;
-    top: 609px;
-  }
-
-  .geometry5 {
-    display: flex;
-    position: relative;
-    left: 611px;
-    top: 617px;
-  }
-
-  .geometry6 {
-    display: flex;
-    position: relative;
-    left: 0;
-    top: 532px;
   }
 
   .About {
@@ -1243,6 +758,476 @@ ul {
       justify-content: space-around;
       align-items: center;
     }
+  }
+
+  .card {
+    &__0 {
+      width: 860px;
+      height: 558px;
+      position: relative;
+      left: 550px;
+      bottom: 969px;
+
+      .Card-Image {
+        img {
+          height: 558px;
+        }
+      }
+
+      .Card-Background {
+        position: relative;
+        height: 353px;
+        bottom: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .Content {
+          position: relative;
+          left: 60px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 30px;
+        }
+
+        .Card-Title > p {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 60px;
+          line-height: 80%;
+        }
+
+        .Card-Skills > .skill {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 80%;
+          padding: 12px 20px;
+        }
+
+        .Card-Buttons {
+          .button {
+            width: 212px;
+            height: 51px;
+            background-image: url(./Images/UnionBlack.svg);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position-x: 170px;
+            background-color: #fff;
+            color: #1a2236;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    &__1 {
+      width: 433px;
+      height: 270px;
+      position: relative;
+      left: 0;
+      bottom: 872px;
+
+      .Card-Image {
+        img {
+          height: 270px;
+        }
+      }
+
+      .Card-Background {
+        position: relative;
+        height: 238px;
+        bottom: 252px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0 0 0 54px;
+
+        .Content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+
+        .Card-Title > p {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 80%;
+        }
+
+        .Card-Skills > .skill {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 10px;
+          line-height: 80%;
+          padding: 12px 20px;
+        }
+
+        .Card-Buttons {
+          .button {
+            width: 212px;
+            height: 51px;
+            background-image: url(./Images/UnionBlack.svg);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position-x: 170px;
+            background-color: #fff;
+            color: #1a2236;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    &__2 {
+      width: 697px;
+      height: 425px;
+      position: relative;
+      left: 0;
+      bottom: 881px;
+
+      .Card-Image {
+        img {
+          height: 460px;
+        }
+      }
+
+      .Card-Background {
+        position: relative;
+        height: 246px;
+        bottom: 252px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0 0 0 54px;
+
+        .Content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+
+        .Card-Title > p {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 80%;
+        }
+
+        .Card-Skills > .skill {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 10px;
+          line-height: 80%;
+          padding: 12px 20px;
+        }
+
+        .Card-Buttons {
+          .button {
+            width: 212px;
+            height: 51px;
+            background-image: url(./Images/UnionBlack.svg);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position-x: 170px;
+            background-color: #fff;
+            color: #1a2236;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    &__3 {
+      width: 382px;
+      height: 270px;
+      position: relative;
+      left: 1024px;
+      bottom: 1665px;
+
+      .Card-Image {
+        img {
+          height: 270px;
+        }
+      }
+
+      .Card-Background {
+        position: relative;
+        height: 238px;
+        bottom: 252px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .Content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+
+        .Card-Title > p {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 80%;
+        }
+
+        .Card-Skills > .skill {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 10px;
+          line-height: 80%;
+          padding: 12px 20px;
+        }
+
+        .Card-Buttons {
+          .button {
+            width: 212px;
+            height: 51px;
+            background-image: url(./Images/UnionBlack.svg);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position-x: 170px;
+            background-color: #fff;
+            color: #1a2236;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    &__4 {
+      width: 382px;
+      height: 270px;
+      position: relative;
+      left: 1024px;
+      bottom: 1673px;
+
+      .Card-Image {
+        img {
+          height: 270px;
+        }
+      }
+
+      .Card-Background {
+        position: relative;
+        height: 238px;
+        bottom: 252px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .Content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+
+        .Card-Title > p {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 80%;
+        }
+
+        .Card-Skills > .skill {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 10px;
+          line-height: 80%;
+          padding: 12px 20px;
+        }
+
+        .Card-Buttons {
+          .button {
+            width: 212px;
+            height: 51px;
+            background-image: url(./Images/UnionBlack.svg);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position-x: 170px;
+            background-color: #fff;
+            color: #1a2236;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    &__5 {
+      width: 382px;
+      height: 270px;
+      position: relative;
+      left: 697px;
+      bottom: 1386px;
+
+      .Card-Image {
+        img {
+          height: 270px;
+        }
+      }
+
+      .Card-Background {
+        position: relative;
+        height: 238px;
+        bottom: 252px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .Content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+
+        .Card-Title > p {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 80%;
+        }
+
+        .Card-Skills > .skill {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 10px;
+          line-height: 80%;
+          padding: 12px 20px;
+        }
+
+        .Card-Buttons {
+          .button {
+            width: 212px;
+            height: 51px;
+            background-image: url(./Images/UnionBlack.svg);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position-x: 170px;
+            background-color: #fff;
+            color: #1a2236;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .Card {
+    height: 1300px;
+
+    .Card-Background {
+      transition: all 500ms ease-out;
+      opacity: 0;
+      visibility: visible;
+    }
+
+    .Card-Background:hover {
+      transition: all 500ms ease-out;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .Projects {
+    .title {
+      position: relative;
+      right: 540px;
+      bottom: 110px;
+      rotate: 270deg;
+      font-family: 'Playfair Display', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 110px;
+      line-height: 100%;
+    }
+  }
+
+  .dots {
+    display: flex;
+    position: relative;
+    left: 300px;
+    top: 34px;
+  }
+
+  .geometry3 {
+    display: flex;
+    position: relative;
+    left: 511px;
+    top: 427px;
+  }
+
+  .geometry4 {
+    display: flex;
+    position: relative;
+    left: 767px;
+    top: 609px;
+  }
+
+  .geometry5 {
+    display: flex;
+    position: relative;
+    left: 611px;
+    top: 617px;
+  }
+
+  .geometry6 {
+    display: flex;
+    position: relative;
+    left: 0;
+    top: 532px;
   }
 
   .carousel-root {
