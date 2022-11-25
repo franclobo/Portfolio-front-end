@@ -232,6 +232,7 @@ ul {
   }
 }
 
+/* stylelint-disable */
 .Project-Buttons {
   display: flex;
   flex-direction: row;
@@ -276,14 +277,14 @@ ul {
     background-color: #fff;
     height: 100vh;
     width: 85vw;
-  
+
     ul {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 20px;
-  
+
       a {
         text-decoration: none;
       }
@@ -327,6 +328,7 @@ ul {
   }
 }
 
+/* stylelint-enable */
 .modalBackground,
 .menuBackground {
   position: fixed;
@@ -582,6 +584,99 @@ ul {
     }
   }
 
+  .Contact {
+    .title {
+      font-family: 'Playfair Display', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 110px;
+      line-height: 100%;
+    }
+
+    .presentation {
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  .Contact-Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .button {
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  .Project {
+    .Project-Title {
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 80%;
+    }
+
+    .Project-Skills {
+      p {
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 80%;
+      }
+    }
+
+    .Project-Items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .Project-Description {
+      p {
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 80%;
+      }
+    }
+
+    .Project-Buttons {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  .Projects {
+    .title {
+      position: relative;
+      right: 540px;
+      bottom: 110px;
+      rotate: 270deg;
+      font-family: 'Playfair Display', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 110px;
+      line-height: 100%;
+    }
+  }
+
   .About {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -623,40 +718,6 @@ ul {
       position: relative;
       left: 115px;
       top: 53px;
-    }
-  }
-
-  .Contact {
-    .title {
-      font-family: 'Playfair Display', serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 110px;
-      line-height: 100%;
-    }
-
-    .presentation {
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 21px;
-      letter-spacing: -0.01em;
-    }
-  }
-
-  .Contact-Form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    .button {
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 27px;
     }
   }
 
@@ -712,51 +773,6 @@ ul {
 
     .projects-container {
       overflow-y: scroll;
-    }
-  }
-
-  .Project {
-    .Project-Title {
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 60px;
-      line-height: 80%;
-    }
-
-    .Project-Skills {
-      p {
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 80%;
-      }
-    }
-
-    .Project-Items {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .Project-Description {
-      p {
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 80%;
-      }
-    }
-
-    .Project-Buttons {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
     }
   }
 
@@ -830,6 +846,7 @@ ul {
         }
       }
     }
+
     &__1 {
       width: 433px;
       height: 270px;
@@ -897,6 +914,7 @@ ul {
         }
       }
     }
+
     &__2 {
       width: 697px;
       height: 425px;
@@ -964,6 +982,7 @@ ul {
         }
       }
     }
+
     &__3 {
       width: 382px;
       height: 270px;
@@ -1030,6 +1049,7 @@ ul {
         }
       }
     }
+
     &__4 {
       width: 382px;
       height: 270px;
@@ -1178,20 +1198,6 @@ ul {
       transition: all 500ms ease-out;
       opacity: 1;
       visibility: visible;
-    }
-  }
-
-  .Projects {
-    .title {
-      position: relative;
-      right: 540px;
-      bottom: 110px;
-      rotate: 270deg;
-      font-family: 'Playfair Display', serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 110px;
-      line-height: 100%;
     }
   }
 
