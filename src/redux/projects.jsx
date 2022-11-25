@@ -1,4 +1,4 @@
-const url = 'http://localhost:3000/api/v1/projects';
+const url = 'https://portfolio-backend20221125.herokuapp.com/';
 const GETPROJECTS = 'redux/projects/GETPROJECTS';
 
 function projectReducer(state = [], action) {
