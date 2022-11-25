@@ -1,0 +1,1261 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.desktop-header,
+.image,
+.geometry3,
+.geometry4,
+.geometry5,
+.geometry6,
+.geometry7,
+.geometry8,
+.geometry9,
+.dots {
+  display: none;
+}
+
+.Portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu {
+  position: relative;
+  right: 10px;
+}
+
+.Paragraph,
+.Paragraph-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+  padding: 0 16px;
+}
+
+.presentation {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+  padding: 0 16px;
+}
+
+.button {
+  border: #1a2236;
+  border-radius: 0;
+  background-color: #1a2236;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  padding: 12px 104px;
+  margin: 40px 0 32px 0;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+
+  a {
+    color: #1a2236;
+  }
+}
+
+.button:active {
+  background-color: #fff;
+  color: #1a2236;
+  border: 2px solid #1a2236;
+
+  a {
+    color: #1a2236;
+  }
+}
+
+.geometry {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0 16px;
+}
+
+.Project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.Project-Skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+  width: 100%;
+  height: 100%;
+
+  p {
+    margin: 0;
+    padding: 5px;
+  }
+}
+
+.skill {
+  border: 1px solid #1a2236;
+}
+
+.Card-Image {
+  img {
+    width: 100%;
+    height: 186px;
+  }
+}
+
+.carousel-root {
+  .slide {
+    img {
+      width: 279px;
+      height: 162px;
+    }
+  }
+
+  .carousel {
+    .thumbs {
+      width: 279px;
+    }
+
+    .thumb {
+      width: 70px;
+      height: 40px;
+    }
+
+    .slider {
+      width: 279px;
+    }
+  }
+}
+
+.Project-Image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.Project-Description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    margin: 0;
+    padding: 0 26px 0 0;
+  }
+}
+
+.Footer {
+  background-color: #1a2236;
+
+  .button {
+    background-image: url(./Images/export.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 22px;
+    padding: 0 30px;
+    color: #92dcdc;
+
+    a {
+      color: #92dcdc;
+      text-decoration: none;
+    }
+  }
+
+  .button:hover {
+    background-image: url(./Images/export.svg);
+    background-color: #1a2236;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 22px;
+    padding: 0 30px;
+    color: #92dcdc;
+  }
+}
+
+/* stylelint-disable */
+.Project-Buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-around;
+
+  .button {
+    border: solid 1px #1a2236;
+    border-radius: 0;
+    background-color: #fff;
+    color: #1a2236;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    padding: 12px 104px;
+    margin: 5px 0;
+    width: 246px;
+    height: 51px;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 27px;
+      color: #1a2236;
+      text-decoration: none;
+    }
+  }
+
+  .menuContainer {
+    position: relative;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 100vh;
+    width: 85vw;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .button:hover {
+    background-color: #1a2236;
+    color: #fff;
+    border: 1px solid #1a2236;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .button:active {
+    background-color: #1a2236;
+    color: #fff;
+    border: 2px solid #1a2236;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .github {
+    background-image: url(https://img.icons8.com/fluency/512/github.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 40px;
+    padding: 10px;
+  }
+
+  .demo {
+    background-image: url(https://img.icons8.com/sf-regular/512/external-link.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 40px;
+    padding: 10px;
+  }
+}
+
+/* stylelint-enable */
+.modalBackground,
+.menuBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: scroll;
+}
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.menu-close {
+  border: none;
+  background: none;
+  position: absolute;
+  padding: 24px 0 0 24px;
+}
+
+.close {
+  border: none;
+  background: none;
+}
+
+.Card-Background {
+  background-color: #1a2236;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 16px;
+
+  .Card-Title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+
+    p {
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 80%;
+      margin: 20px 0 16px 0;
+    }
+  }
+
+  .Card-Skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 20px 0;
+
+    p {
+      margin: 0;
+      padding: 6px 10px;
+      background-color: #98dede;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 10.3334px;
+      line-height: 80%;
+    }
+  }
+
+  .Card-Buttons {
+    .button {
+      border: solid 1px #fff;
+      border-radius: 0;
+      background-color: #1a2236;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: left;
+      padding: 12px 10px;
+      margin: 0 0 20px 0;
+      width: 178px;
+      height: 44px;
+      background-image: url(./Images/Union.svg);
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 20px;
+      background-position-x: 150px;
+      cursor: pointer;
+    }
+  }
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 16px;
+
+  .About-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .About-Skills {
+    color: #fff;
+  }
+
+  .Languages {
+    background-color: #1c528a;
+    padding: 50px 100px;
+    margin: 10px 0;
+  }
+
+  .Frameworks {
+    background-color: #e2505c;
+    padding: 50px 100px;
+    margin: 10px 0;
+  }
+
+  .Skills {
+    background-color: #febf52;
+    padding: 50px 100px;
+    margin: 10px 0;
+  }
+
+  .About-Button {
+    .button {
+      border: solid 1px #fff;
+      border-radius: 0;
+      background-color: #1a2236;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: left;
+      padding: 12px 90px;
+      margin: 0 0 20px 0;
+      width: 288px;
+      height: 44px;
+      background-image: url(./Images/ic_download.svg);
+      background-repeat: no-repeat;
+      background-position: 200px;
+      background-size: 22px;
+      cursor: pointer;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9fa;
+
+  .App-logo {
+    align-self: flex-start;
+  }
+}
+
+.Contact-Info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 0 42px 0;
+  margin: 0;
+}
+
+/* desk-version */
+@media (min-width: 800px) {
+  .Header,
+  .geometry {
+    display: none;
+  }
+
+  .desktop-header,
+  .image {
+    display: flex;
+
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 0 24px;
+
+      a {
+        color: #1a2236;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .Paragraph {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .Paragraph-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 0 94px 0 160px;
+    }
+
+    .desktop-logo {
+      width: 703px;
+      height: 730px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .Contact {
+    .title {
+      font-family: 'Playfair Display', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 110px;
+      line-height: 100%;
+    }
+
+    .presentation {
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  .Contact-Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .button {
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  .Project {
+    .Project-Title {
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 80%;
+    }
+
+    .Project-Skills {
+      p {
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 80%;
+      }
+    }
+
+    .Project-Items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .Project-Description {
+      p {
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 80%;
+      }
+    }
+
+    .Project-Buttons {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  .Projects {
+    .title {
+      position: relative;
+      right: 540px;
+      bottom: 110px;
+      rotate: 270deg;
+      font-family: 'Playfair Display', serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 110px;
+      line-height: 100%;
+    }
+  }
+
+  .About {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    direction: rtl;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 158px;
+
+    .About-Paragraph {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      .title {
+        font-family: 'Playfair Display', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 110px;
+        line-height: 100%;
+      }
+
+      p {
+        text-align: end;
+        padding: 0 70px;
+      }
+    }
+
+    .About-Skills {
+      display: grid;
+      direction: ltr;
+      gap: 0;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .geometry7 {
+      display: flex;
+      position: relative;
+      left: 115px;
+      top: 53px;
+    }
+  }
+
+  .geometry8 {
+    display: flex;
+    position: relative;
+    right: 542px;
+    bottom: 75px;
+  }
+
+  .geometry9 {
+    display: flex;
+    position: relative;
+    left: 500px;
+    top: 1px;
+  }
+
+  .Footer-Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .get-cv {
+      position: relative;
+      left: 100px;
+    }
+
+    .social-icon {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0 20px;
+      top: 20px;
+      right: 100px;
+    }
+  }
+
+  .modalContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f9f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    overflow-x: hidden;
+    border: 70px solid #1a2236;
+    z-index: 10;
+
+    .projects-container {
+      overflow-y: scroll;
+    }
+  }
+
+  .card {
+    &__0 {
+      width: 860px;
+      height: 558px;
+      position: relative;
+      left: 550px;
+      bottom: 969px;
+
+      .Card-Image {
+        img {
+          height: 558px;
+        }
+      }
+
+      .Card-Background {
+        position: relative;
+        height: 353px;
+        bottom: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .Content {
+          position: relative;
+          left: 60px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 30px;
+        }
+
+        .Card-Title > p {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 60px;
+          line-height: 80%;
+        }
+
+        .Card-Skills > .skill {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 80%;
+          padding: 12px 20px;
+        }
+
+        .Card-Buttons {
+          .button {
+            width: 212px;
+            height: 51px;
+            background-image: url(./Images/UnionBlack.svg);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position-x: 170px;
+            background-color: #fff;
+            color: #1a2236;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    &__1 {
+      width: 433px;
+      height: 270px;
+      position: relative;
+      left: 0;
+      bottom: 872px;
+
+      .Card-Image {
+        img {
+          height: 270px;
+        }
+      }
+
+      .Card-Background {
+        position: relative;
+        height: 238px;
+        bottom: 252px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0 0 0 54px;
+
+        .Content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+
+        .Card-Title > p {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 80%;
+        }
+
+        .Card-Skills > .skill {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 10px;
+          line-height: 80%;
+          padding: 12px 20px;
+        }
+
+        .Card-Buttons {
+          .button {
+            width: 212px;
+            height: 51px;
+            background-image: url(./Images/UnionBlack.svg);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position-x: 170px;
+            background-color: #fff;
+            color: #1a2236;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    &__2 {
+      width: 697px;
+      height: 425px;
+      position: relative;
+      left: 0;
+      bottom: 881px;
+
+      .Card-Image {
+        img {
+          height: 460px;
+        }
+      }
+
+      .Card-Background {
+        position: relative;
+        height: 246px;
+        bottom: 252px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0 0 0 54px;
+
+        .Content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+
+        .Card-Title > p {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 80%;
+        }
+
+        .Card-Skills > .skill {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 10px;
+          line-height: 80%;
+          padding: 12px 20px;
+        }
+
+        .Card-Buttons {
+          .button {
+            width: 212px;
+            height: 51px;
+            background-image: url(./Images/UnionBlack.svg);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position-x: 170px;
+            background-color: #fff;
+            color: #1a2236;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    &__3 {
+      width: 382px;
+      height: 270px;
+      position: relative;
+      left: 1024px;
+      bottom: 1665px;
+
+      .Card-Image {
+        img {
+          height: 270px;
+        }
+      }
+
+      .Card-Background {
+        position: relative;
+        height: 238px;
+        bottom: 252px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .Content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+
+        .Card-Title > p {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 80%;
+        }
+
+        .Card-Skills > .skill {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 10px;
+          line-height: 80%;
+          padding: 12px 20px;
+        }
+
+        .Card-Buttons {
+          .button {
+            width: 212px;
+            height: 51px;
+            background-image: url(./Images/UnionBlack.svg);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position-x: 170px;
+            background-color: #fff;
+            color: #1a2236;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    &__4 {
+      width: 382px;
+      height: 270px;
+      position: relative;
+      left: 1024px;
+      bottom: 1673px;
+
+      .Card-Image {
+        img {
+          height: 270px;
+        }
+      }
+
+      .Card-Background {
+        position: relative;
+        height: 238px;
+        bottom: 252px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .Content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+
+        .Card-Title > p {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 80%;
+        }
+
+        .Card-Skills > .skill {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 10px;
+          line-height: 80%;
+          padding: 12px 20px;
+        }
+
+        .Card-Buttons {
+          .button {
+            width: 212px;
+            height: 51px;
+            background-image: url(./Images/UnionBlack.svg);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position-x: 170px;
+            background-color: #fff;
+            color: #1a2236;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    &__5 {
+      width: 382px;
+      height: 270px;
+      position: relative;
+      left: 697px;
+      bottom: 1386px;
+
+      .Card-Image {
+        img {
+          height: 270px;
+        }
+      }
+
+      .Card-Background {
+        position: relative;
+        height: 238px;
+        bottom: 252px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .Content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+
+        .Card-Title > p {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 80%;
+        }
+
+        .Card-Skills > .skill {
+          font-family: 'Poppins', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 10px;
+          line-height: 80%;
+          padding: 12px 20px;
+        }
+
+        .Card-Buttons {
+          .button {
+            width: 212px;
+            height: 51px;
+            background-image: url(./Images/UnionBlack.svg);
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position-x: 170px;
+            background-color: #fff;
+            color: #1a2236;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .Card {
+    height: 1300px;
+
+    .Card-Background {
+      transition: all 500ms ease-out;
+      opacity: 0;
+      visibility: visible;
+    }
+
+    .Card-Background:hover {
+      transition: all 500ms ease-out;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .dots {
+    display: flex;
+    position: relative;
+    left: 300px;
+    top: 34px;
+  }
+
+  .geometry3 {
+    display: flex;
+    position: relative;
+    left: 511px;
+    top: 427px;
+  }
+
+  .geometry4 {
+    display: flex;
+    position: relative;
+    left: 767px;
+    top: 609px;
+  }
+
+  .geometry5 {
+    display: flex;
+    position: relative;
+    left: 611px;
+    top: 617px;
+  }
+
+  .geometry6 {
+    display: flex;
+    position: relative;
+    left: 0;
+    top: 532px;
+  }
+
+  .carousel-root {
+    .slide {
+      img {
+        height: 300px;
+      }
+    }
+
+    .carousel {
+      .thumbs {
+        width: 300px;
+      }
+
+      .thumb {
+        width: 300px;
+        height: 20%;
+      }
+
+      .slider {
+        width: 800px;
+      }
+    }
+  }
+}
