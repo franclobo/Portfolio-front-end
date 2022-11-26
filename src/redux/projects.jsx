@@ -1,4 +1,4 @@
-const url = 'https://portfolio-backend20221125.herokuapp.com/';
+const url = 'https://potfolio-backend.onrender.com';
 const GETPROJECTS = 'redux/projects/GETPROJECTS';
 
 function projectReducer(state = [], action) {
