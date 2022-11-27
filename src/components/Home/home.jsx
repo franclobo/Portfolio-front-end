@@ -73,22 +73,22 @@ export default function Home() {
 
   return (
     <div className="Home">
+      <div className="Header">
+        <img src={ImageGeometry1} className="App-logo" alt="logo" />
+        <div className="menu">
+          <IconButton aria-label="delete" size="large" onClick={() => { setOpen(true); }}>
+            <MenuIcon fontSize="inherit" />
+          </IconButton>
+        </div>
+      </div>
+      <div className="desktop-header">
+        <Navbar />
+      </div>
+      { open && <Menu onClose={setOpen} /> }
       <div className="Portfolio">
-        <div className="desktop-header">
-          <Navbar />
-        </div>
-        <div className="Header">
-          <img src={ImageGeometry1} className="App-logo" alt="logo" />
-          <div className="menu">
-            <IconButton aria-label="delete" size="large" onClick={() => { setOpen(true); }}>
-              <MenuIcon fontSize="inherit" />
-            </IconButton>
-          </div>
-        </div>
-        { open && <Menu onClose={setOpen} /> }
         <div className="Paragraph desktop">
-          <div className="Paragraph-1 desktop">
-            <h1 className="title" id="Hello">Francisco Borja</h1>
+          <div className="Paragraph-1 desktop" id="Hello">
+            <h1 className="title">Francisco Borja</h1>
             <p className="presentation">Hello! I am a software developer! I can help you build a product, feature or website. Take a look of my works. If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
             <button type="button" className="button">
               <a href="#Contact" className="button-link">Start colaboration</a>

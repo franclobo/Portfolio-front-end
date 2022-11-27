@@ -26,16 +26,21 @@ body {
   justify-content: center;
   width: 100vw;
   height: 100%;
+  margin-top: 100px;
 }
 
 .Header {
   display: flex;
+  position: fixed;
+  top: 0;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  background-color: #f9f9fa;
 }
 
 .menu {
+  display: flex;
   position: relative;
   right: 10px;
 }
@@ -233,6 +238,30 @@ ul {
 }
 
 /* stylelint-disable */
+.menuContainer {
+  display: flex;
+  position: relative;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 100vh;
+  width: 85vw;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
 .Project-Buttons {
   display: flex;
   flex-direction: row;
@@ -265,29 +294,6 @@ ul {
       height: 27px;
       color: #1a2236;
       text-decoration: none;
-    }
-  }
-
-  .menuContainer {
-    position: relative;
-    left: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #fff;
-    height: 100vh;
-    width: 85vw;
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-
-      a {
-        text-decoration: none;
-      }
     }
   }
 
@@ -331,6 +337,7 @@ ul {
 /* stylelint-enable */
 .modalBackground,
 .menuBackground {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -352,6 +359,7 @@ ul {
 }
 
 .menu-close {
+  display: flex;
   border: none;
   background: none;
   position: absolute;
@@ -538,13 +546,24 @@ ul {
 /* desk-version */
 @media (min-width: 800px) {
   .Header,
-  .geometry {
+  .geometry,
+  .menuBackground {
     display: none;
   }
 
-  .desktop-header,
   .image {
     display: flex;
+  }
+
+  .desktop-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
 
     .navbar {
       display: flex;
