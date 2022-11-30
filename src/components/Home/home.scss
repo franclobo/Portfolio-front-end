@@ -547,7 +547,8 @@ ul {
 @media (min-width: 800px) {
   .Header,
   .geometry,
-  .menuBackground {
+  .menuBackground,
+  .App-logo {
     display: none;
   }
 
@@ -742,16 +743,16 @@ ul {
 
   .geometry8 {
     display: flex;
+    align-self: flex-start;
     position: relative;
-    right: 542px;
-    bottom: 75px;
+    left: 0;
   }
 
   .geometry9 {
     display: flex;
+    align-self: flex-end;
     position: relative;
-    left: 500px;
-    top: 1px;
+    left: 513px;
   }
 
   .Footer-Container {
