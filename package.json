@@ -17,7 +17,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "babel-plugin-macros": "^3.1.0",
-    "bootstrap": "^5.2.2",
+    "bootstrap": "^5.2.3",
     "ngx-gallery": "^5.10.0",
     "prop-types": "^15.8.1",
     "rb-ngx-gallery": "^1.0.1",

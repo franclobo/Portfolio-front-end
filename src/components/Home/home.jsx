@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import emailjs from '@emailjs/browser';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import TextField from '@mui/material/TextField';
 import { fetchProjects } from '../../redux/projects';
 import ImageGeometry from './Images/image-geometry_1.svg';
 import ImageGeometry1 from './Images/image_geometry_1.svg';
@@ -14,11 +13,6 @@ import linkedin from './Images/ic_linkedin.svg';
 import twitter from './Images/ic_twitter.svg';
 import medium from './Images/ic_medium.svg';
 import angellist from './Images/ic_angellist.svg';
-import dots from './Images/image_dots.svg';
-import ImageGeometry3 from './Images/image-geometry_2.svg';
-import ImageGeometry4 from './Images/image-geometry_3.svg';
-import ImageGeometry5 from './Images/image-geometry_4.svg';
-import ImageGeometry6 from './Images/image-geometry_5.svg';
 import ImageGeometry7 from './Images/image_dots_with_teal.svg';
 import ImageGeometry8 from './Images/image-geometry_6.svg';
 import ImageGeometry9 from './Images/image-geometry_7.svg';
@@ -102,11 +96,6 @@ export default function Home() {
       </div>
       <div className="Projects" id="Portfolio">
         <h1 className="title">Projects</h1>
-        <img src={dots} className="dots" alt="dots" />
-        <img src={ImageGeometry3} className="geometry3" alt="geometry" />
-        <img src={ImageGeometry4} className="geometry4" alt="geometry" />
-        <img src={ImageGeometry5} className="geometry5" alt="geometry" />
-        <img src={ImageGeometry6} className="geometry6" alt="geometry" />
         <div className="Card">
           {projects.map((card) => (
             <Cards
@@ -171,54 +160,54 @@ export default function Home() {
       <div className="Contact">
         <img src={ImageGeometry1} className="App-logo" alt="logo" />
         <img src={ImageGeometry8} className="geometry8" alt="geometry" />
-        <h1 className="title" id="Contact">Get Started</h1>
-        <div className="Contact-Container">
-          <div className="Contact-Paragraph">
-            <p className="presentation">
-              I am always interested in hearing about
-              new projects, so if you would like to chat
-              please get in touch.
-            </p>
-          </div>
-        </div>
         <div className="Contact-Form">
           <form ref={form} onSubmit={sendEmail}>
             <div className="Contact-Info">
-              <TextField
-                required
-                id="standard-basic"
-                name="user_name"
-                label="Your name"
-                variant="outlined"
-                type="text"
-                placeholder="Your name"
-              />
-              <TextField
-                required
-                id="standard-basic"
-                name="user_email"
-                label="Your email"
-                variant="outlined"
-                type="email"
-                placeholder="Email address"
-              />
-              <TextField
-                required
-                id="outlined-multiline-static"
-                name="message"
-                label="Message"
-                variant="outlined"
-                multiline
-                rows={4}
-                type="text"
-                placeholder="Enter your message here..."
-              />
+              <h1 className="title" id="Contact">Get Started</h1>
+              <div className="Contact-Container">
+                <div className="Contact-Paragraph">
+                  <p className="presentation">
+                    I am always interested in hearing about
+                    new projects, so if you would like to chat
+                    please get in touch.
+                  </p>
+                </div>
+              </div>
+              <ul className="data">
+                <div className="data-container">
+                  <li className="liname">
+                    <label htmlFor="name" className="namelabel">
+                      Your name
+                      <br />
+                      <input type="text" id="name" name="user_name" placeholder="Francisco" maxLength="30" required />
+                    </label>
+                  </li>
+                  <li className="liemail">
+                    <label htmlFor="email" className="emaillabel">
+                      Your email
+                      <br />
+                      <input type="email" id="email" name="user_email" placeholder="example@mail.com" required />
+                    </label>
+                  </li>
+                  <li className="liphone">
+                    <label htmlFor="phone" className="namelabel">
+                      Your phone
+                      <br />
+                      <input type="text" id="phone" name="user_phone" placeholder="+593 000 000 000" maxLength="15" required />
+                    </label>
+                  </li>
+                </div>
+                <li className="limsg">
+                  <div className="msglabel">Message</div>
+                  <textarea className="Text" name="message" maxLength="500" required placeholder="Enter your message here..." />
+                </li>
+              </ul>
             </div>
             {status && renderAlert()}
             <button type="submit" className="button">Get in touch</button>
           </form>
-          <img src={ImageGeometry9} className="geometry9" alt="geometry" />
         </div>
+        <img src={ImageGeometry9} className="geometry9" alt="geometry" />
       </div>
       <div className="Footer">
         <div className="Footer-Container">
