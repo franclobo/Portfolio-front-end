@@ -213,7 +213,7 @@ export default function Home() {
         <div className="Footer-Container">
           <div className="get-cv">
             <button type="button" className="button">
-              <a href="./Images/Borja_Francisco_CV_2023" download="Borja_Francisco_CV_2023">Get my Resume</a>
+              <a href="./Images/Borja_Francisco_CV_2023.pdf" download="Borja_Francisco_CV_2023.pdf">Get my Resume</a>
             </button>
           </div>
           <div className="social-media">
