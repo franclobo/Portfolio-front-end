@@ -119,7 +119,7 @@ export default function Home() {
           </p>
           <div className="About-Button">
             <button type="button" className="button">
-              <a href="./Images/Borja_Francisco_CV_2023" download="Borja_Francisco_CV_2023">Get my CV</a>
+              <a href="./Images/Borja_Francisco_CV_2023.pdf" download="Borja_Francisco_CV_2023.pdf">Get my CV</a>
             </button>
           </div>
         </div>
