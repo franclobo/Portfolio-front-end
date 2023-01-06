@@ -16,6 +16,7 @@ import angellist from './Images/ic_angellist.svg';
 import ImageGeometry7 from './Images/image_dots_with_teal.svg';
 import ImageGeometry8 from './Images/image-geometry_6.svg';
 import ImageGeometry9 from './Images/image-geometry_7.svg';
+import CV2023 from './Images/Borja_Francisco_CV_2023.pdf';
 import Menu from './Menu';
 import Navbar from './Navbar';
 import './home.scss';
@@ -119,7 +120,7 @@ export default function Home() {
           </p>
           <div className="About-Button">
             <button type="button" className="button">
-              <a href="./Images/Borja_Francisco_CV_2023.pdf" download="Borja_Francisco_CV_2023.pdf">Get my CV</a>
+              <a href={CV2023} download="Borja_Francisco_CV_2023">Get my CV</a>
             </button>
           </div>
         </div>
@@ -213,7 +214,7 @@ export default function Home() {
         <div className="Footer-Container">
           <div className="get-cv">
             <button type="button" className="button">
-              <a href="./Images/Borja_Francisco_CV_2023.pdf" download="Borja_Francisco_CV_2023.pdf">Get my Resume</a>
+              <a href={CV2023} download="Borja_Francisco_CV_2023">Get my Resume</a>
             </button>
           </div>
           <div className="social-media">
