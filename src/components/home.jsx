@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import emailjs from '@emailjs/browser';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import { fetchProjects } from '../../redux/projects';
+import { fetchProjects } from '../redux/projects';
 import ImageGeometry from './Images/image-geometry_1.svg';
 import ImageGeometry1 from './Images/image_geometry_1.svg';
 import ImageGeometry2 from './Images/image_geometry_2.svg';

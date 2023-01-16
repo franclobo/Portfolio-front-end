@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Modal from './Modal';
+import Loading from './Loading';
 import './home.scss';
 
 function Cards(props) {
@@ -11,6 +12,16 @@ function Cards(props) {
   const generateKey = (pre) => `${pre}${new Date().getTime()}`;
 
   const [open, setOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) { return <Loading />; }
 
   return (
     <div className={`Cards card__${id}`} id={id}>
