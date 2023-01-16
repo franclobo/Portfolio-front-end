@@ -837,6 +837,24 @@ form {
     margin: 0 16px;
   }
 
+  .loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f9f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 10;
+  img {
+    width: 250px;
+  }
+}
+
   .carousel-root {
     .slide {
       img {
@@ -891,23 +909,5 @@ form {
       width: 500px;
       height: 140px;
     }
-  }
-}
-
-.loading {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #f9f9fa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  overflow: hidden;
-  z-index: 10;
-  img {
-    width: 250px;
   }
 }
