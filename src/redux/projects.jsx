@@ -1,4 +1,4 @@
-const url = 'http://127.0.0.1:3000/';
+const url = '../mocks/projects.json';
 const GETPROJECTS = 'redux/projects/GETPROJECTS';
 
 function projectReducer(state = [], action) {
