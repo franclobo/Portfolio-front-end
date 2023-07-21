@@ -65,7 +65,7 @@
     ],
     "skills": ["Ruby on Rails", "PostgreSQL"],
     "github": "https://github.com/franclobo/Recipes_app",
-    "demo": "https://recipes-app09122022.herokuapp.com/",
+    "demo": "https://recipes-app.fly.dev/users/sign_in",
     "created_at": "2023-07-20T18:29:49.707Z",
     "updated_at": "2023-07-20T18:29:49.707Z"
   },

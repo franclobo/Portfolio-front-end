@@ -8,6 +8,8 @@ import { fetchProjects } from '../../redux/projects';
 import ImageGeometry from './Images/image-geometry_1.svg';
 import ImageGeometry1 from './Images/image_geometry_1.svg';
 import ImageGeometry2 from './Images/image_geometry_2.svg';
+import whatsapp from './Images/ic_whatsapp.svg';
+import facebook from './Images/ic_facebook.svg';
 import stackoverflow from './Images/ic_stackoverflow.svg';
 import github from './Images/ic_github.svg';
 import linkedin from './Images/ic_linkedin.svg';
@@ -41,19 +43,28 @@ export default function Home() {
 
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_sir2z7j', 'template_ssw8wxj', form.current, '5xAo0GJGmMeTfUPd1')
-      .then((result) => {
-        // eslint-disable-next-line
-        console.log(result.text);
-        e.target.reset();
-        setStatus('Message sent successfully');
-      }, (error) => {
-        // eslint-disable-next-line
-        console.log(error.text);
-        setStatus('Message failed to send');
+  const sendEmail = () => {
+    form.current
+      .validateFields()
+      .then((values) => {
+        emailjs
+          .send(
+            'service_sir2z7j',
+            'template_ssw8wxj',
+            values,
+            '5xAo0GJGmMeTfUPd1',
+          )
+          .then(
+            (result) => {
+              console.log(result.text);
+            },
+            (error) => {
+              console.log(error.text);
+            },
+          );
+      })
+      .catch((error) => {
+        console.log(error);
       });
   };
 
@@ -80,18 +91,33 @@ export default function Home() {
         <div className="Header">
           <img src={ImageGeometry1} className="App-logo" alt="logo" />
           <div className="menu">
-            <IconButton aria-label="delete" size="large" onClick={() => { setOpen(true); }}>
+            <IconButton
+              aria-label="delete"
+              size="large"
+              onClick={() => {
+                setOpen(true);
+              }}
+            >
               <MenuIcon fontSize="inherit" />
             </IconButton>
           </div>
         </div>
-        { open && <Menu onClose={setOpen} /> }
+        {open && <Menu onClose={setOpen} />}
         <div className="Paragraph desktop">
           <div className="Paragraph-1 desktop">
-            <h1 className="title" id="Hello">Francisco Borja</h1>
-            <p className="presentation">Hello! I am a software developer! I can help you build a product, feature or website. Take a look of my works. If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
+            <h1 className="title" id="Hello">
+              Francisco Borja
+            </h1>
+            <p className="presentation">
+              Hello! I am a software developer! I can help you build a product,
+              feature or website. Take a look of my works. If you like what you
+              see and have a project you need coded, don’t hesitate and contact
+              me.
+            </p>
             <button type="button" className="button">
-              <a href="#Contact" className="button-link">Start colaboration</a>
+              <a href="#Contact" className="button-link">
+                Start colaboration
+              </a>
             </button>
           </div>
           <div className="image">
@@ -121,16 +147,22 @@ export default function Home() {
       </div>
       <div className="About">
         <div className="About-Paragraph">
-          <h1 className="title" id="About">About</h1>
+          <h1 className="title" id="About">
+            About
+          </h1>
           <p className="presentation">
-            Business Engineer, full-stack developer.
-            Interested in Web development and data science.
-            Programming with React&Readux and Ruby on Rails.
-            Available for hiring.
+            Business Engineer, full-stack developer. Interested in Web
+            development and data science. Programming with React&Readux and Ruby
+            on Rails. Available for hiring.
           </p>
           <div className="About-Button">
             <button type="button" className="button">
-              <a href="./Images/Fran_Borja_CV.pdf" download="Fran_Borja_CV.pdf">Get my CV</a>
+              <a
+                href="./Images/Borja+Francisco+CV+2023.pdf"
+                download="Borja+Francisco+CV+2023.pdf"
+              >
+                Get my CV
+              </a>
             </button>
           </div>
         </div>
@@ -171,13 +203,14 @@ export default function Home() {
       <div className="Contact">
         <img src={ImageGeometry1} className="App-logo" alt="logo" />
         <img src={ImageGeometry8} className="geometry8" alt="geometry" />
-        <h1 className="title" id="Contact">Get Started</h1>
+        <h1 className="title" id="Contact">
+          Get Started
+        </h1>
         <div className="Contact-Container">
           <div className="Contact-Paragraph">
             <p className="presentation">
-              I am always interested in hearing about
-              new projects, so if you would like to chat
-              please get in touch.
+              I am always interested in hearing about new projects, so if you
+              would like to chat please get in touch.
             </p>
           </div>
         </div>
@@ -215,7 +248,9 @@ export default function Home() {
               />
             </div>
             {status && renderAlert()}
-            <button type="submit" className="button">Get in touch</button>
+            <button type="submit" className="button">
+              Get in touch
+            </button>
           </form>
           <img src={ImageGeometry9} className="geometry9" alt="geometry" />
         </div>
@@ -224,38 +259,97 @@ export default function Home() {
         <div className="Footer-Container">
           <div className="get-cv">
             <button type="button" className="button">
-              <a href="./Images/Fran_Borja_CV.pdf" download="Fran_Borja_CV.pdf">Get my Resume</a>
+              <a
+                href="./Images/Borja+Francisco+CV+2023.pdf"
+                download="Borja+Francisco+CV+2023.pdf"
+              >
+                Get my Resume
+              </a>
             </button>
           </div>
           <div className="social-media">
             <ul className="social-icons">
               <li className="social-icon">
-                <a href="https://stackoverflow.com/users/19740581/francisco-borja" target="_blank" rel="noreferrer">
-                  <img className="stackoverflow" src={stackoverflow} alt="stack overflow" />
+                <a
+                  href="https://wa.me/593961842276?text=Hello"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="stackoverflow"
+                    src={whatsapp}
+                    alt="whatsapp"
+                  />
                 </a>
               </li>
               <li className="social-icon">
-                <a href="https://github.com/franclobo" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100094859022478"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="stackoverflow"
+                    src={facebook}
+                    alt="facebook"
+                  />
+                </a>
+              </li>
+              <li className="social-icon">
+                <a
+                  href="https://stackoverflow.com/users/19740581/francisco-borja"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="stackoverflow"
+                    src={stackoverflow}
+                    alt="stack overflow"
+                  />
+                </a>
+              </li>
+              <li className="social-icon">
+                <a
+                  href="https://github.com/franclobo"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img className="github" src={github} alt="github" />
                 </a>
               </li>
               <li className="social-icon">
-                <a href="https://twitter.com/Pancho2788" target="_blank" rel="noreferrer">
+                <a
+                  href="https://twitter.com/Pancho2788"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img className="twitter" src={twitter} alt="twitter" />
                 </a>
               </li>
               <li className="social-icon">
-                <a href="https://www.linkedin.com/in/francisco-borja-lobato/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/francisco-borja-lobato/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img className="linkedin" src={linkedin} alt="linkedin" />
                 </a>
               </li>
               <li className="social-icon">
-                <a href="https://medium.com/@fjbl2788" target="_blank" rel="noreferrer">
+                <a
+                  href="https://medium.com/@fjbl2788"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img className="medium" src={medium} alt="medium.svg" />
                 </a>
               </li>
               <li className="social-icon">
-                <a href="https://angel.co/u/francisco-borja-lobato" target="_blank" rel="noreferrer">
+                <a
+                  href="https://angel.co/u/francisco-borja-lobato"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img className="angellist" src={angellist} alt="angellist" />
                 </a>
               </li>
