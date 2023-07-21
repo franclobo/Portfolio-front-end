@@ -20,7 +20,6 @@ export const fetchProjects = () => (dispatch) => {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       const projects = Object.entries(data);
       projects.forEach((project) => {
         List.push({
