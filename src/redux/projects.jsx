@@ -1,4 +1,4 @@
-const url = '../projects.json';
+const url = 'https://raw.githubusercontent.com/franclobo/portfolio-front-end/dev/src/mocks/projects.json';
 const GETPROJECTS = 'redux/projects/GETPROJECTS';
 
 function projectReducer(state = [], action) {
@@ -20,6 +20,7 @@ export const fetchProjects = () => (dispatch) => {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
       const projects = Object.entries(data);
       projects.forEach((project) => {
         List.push({
