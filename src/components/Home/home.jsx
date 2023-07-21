@@ -8,6 +8,7 @@ import { fetchProjects } from '../../redux/projects';
 import ImageGeometry from './Images/image-geometry_1.svg';
 import ImageGeometry1 from './Images/image_geometry_1.svg';
 import ImageGeometry2 from './Images/image_geometry_2.svg';
+import BorjaFranciscoCV from './Images/Borja+Francisco+CV+2023.pdf';
 import whatsapp from './Images/ic_whatsapp.svg';
 import facebook from './Images/ic_facebook.svg';
 import stackoverflow from './Images/ic_stackoverflow.svg';
@@ -149,7 +150,7 @@ export default function Home() {
           <div className="About-Button">
             <button type="button" className="button">
               <a
-                href="./Images/Borja+Francisco+CV+2023.pdf"
+                href={BorjaFranciscoCV}
                 download="Borja+Francisco+CV+2023.pdf"
               >
                 Get my CV
@@ -251,7 +252,7 @@ export default function Home() {
           <div className="get-cv">
             <button type="button" className="button">
               <a
-                href="./Images/Borja+Francisco+CV+2023.pdf"
+                href={BorjaFranciscoCV}
                 download="Borja+Francisco+CV+2023.pdf"
               >
                 Get my Resume
