@@ -43,28 +43,19 @@ export default function Home() {
 
   const form = useRef();
 
-  const sendEmail = () => {
-    form.current
-      .validateFields()
-      .then((values) => {
-        emailjs
-          .send(
-            'service_sir2z7j',
-            'template_ssw8wxj',
-            values,
-            '5xAo0GJGmMeTfUPd1',
-          )
-          .then(
-            (result) => {
-              console.log(result.text);
-            },
-            (error) => {
-              console.log(error.text);
-            },
-          );
-      })
-      .catch((error) => {
-        console.log(error);
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_sir2z7j', 'template_ssw8wxj', form.current, '5xAo0GJGmMeTfUPd1')
+      .then((result) => {
+        // eslint-disable-next-line
+        console.log(result.text);
+        e.target.reset();
+        setStatus('Message sent successfully');
+      }, (error) => {
+        // eslint-disable-next-line
+        console.log(error.text);
+        setStatus('Message failed to send');
       });
   };
 
