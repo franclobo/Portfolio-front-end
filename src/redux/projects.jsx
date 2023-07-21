@@ -1,4 +1,4 @@
-const url = '../mocks/projects.json';
+const url = '../projects.json';
 const GETPROJECTS = 'redux/projects/GETPROJECTS';
 
 function projectReducer(state = [], action) {
