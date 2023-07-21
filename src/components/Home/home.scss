@@ -40,28 +40,6 @@ body {
   right: 10px;
 }
 
-.menuContainer {
-  position: relative;
-  left: 28px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #fff;
-  width: 85vw;
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-
-    a {
-      text-decoration: none;
-    }
-  }
-}
-
 .Paragraph,
 .Paragraph-1 {
   display: flex;
@@ -307,8 +285,12 @@ ul {
       justify-content: center;
       gap: 20px;
 
-      a {
-        text-decoration: none;
+      li {
+        list-style: none;
+          .menu-link {
+          text-decoration: none;
+          color: #1a2236;
+        }
       }
     }
   }
